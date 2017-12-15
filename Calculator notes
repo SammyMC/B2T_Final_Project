@@ -1,0 +1,5 @@
+If "Enter" is pressed
+	Check input boxes
+		If the first and the third input boxes contain numbers, and if the second input box contains an operator perform calculation and display result
+		If not, ignore Enter
+	

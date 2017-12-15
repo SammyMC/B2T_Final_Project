@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator 1.0</title>
+	</head>
+	<body>
+
+		<!-- This element displays the result of the calculation that is done below -->
+		<h1 id="display"></h1>
+
+		<!-- Input boxes for entering the numbers and operators, and an 'Enter' button to call a function-->
+		<input type="number" id="operand1" ="">
+		<input type="" id="operator">
+		<input type="number" id="operand2">
+		<input type="button" id="Enter" value="Enter" onclick="computeAndDisplay()">
+
+		<script type="text/javascript">
+			
+			//This function performs the operation and displays the result
+			function computeAndDisplay(){
+
+				//Placing the input values and the display element in variables
+				a = document.getElementById('operand1').value;
+				b = document.getElementById('operator').value;
+				c = document.getElementById('operand2').value;
+				d = document.getElementById('display');
+
+				//These statements check what operator was input, perform the appropriate calculation, and display the result
+				if(b == '*'){
+					d.innerHTML = a * c;
+				}else if(b == '/'){
+					d.innerHTML = a / c;
+				}else if(b == '+'){
+					d.innerHTML = Number(a) + Number(c);
+				}else if(b == '-'){
+					d.innerHTML = a - c;
+				}else{}
+
+			}
+		</script>
+
+	</body>
+</html>
